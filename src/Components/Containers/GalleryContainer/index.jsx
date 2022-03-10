@@ -1,5 +1,5 @@
 import React from 'react';
-import GalleryCard from '../../Atoms/GalleryCard';
+import GalleryCard from '../../Atoms/Card';
 import './GalleryContainer.css';
 
 // This container will show the gallery page, showcasing the available items to inspect
