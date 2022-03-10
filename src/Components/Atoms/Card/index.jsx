@@ -1,7 +1,8 @@
 import React from 'react';
 import './Card.css';
 
-const GalleryCard = () => {
+// If properties are passed from the parent, we can use them here
+const GalleryCard = ({ title }) => {
     const handleClick = () => {
 
     };
@@ -13,7 +14,7 @@ const GalleryCard = () => {
             </div>
             <div className="card__content">
                 <div className="card__title">
-                    [Vehicle name]
+                    { title || '[Vehicle name]' } 
                 </div>
                 <div className="card__subtitle">
                     [Vehicle model]
