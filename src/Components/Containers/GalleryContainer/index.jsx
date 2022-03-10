@@ -1,5 +1,5 @@
 import React from 'react';
-import GalleryCard from '../../Atoms/Card';
+import Card from '../../Atoms/Card';
 import './GalleryContainer.css';
 
 // This container will show the gallery page, showcasing the available items to inspect
@@ -15,10 +15,10 @@ const GalleryContainer = () => {
                    * You can pass them properties (props), as seen below with 'title'. 
                    * There are some generic props, such as 'className' and 'onClick', but you can add any prop you need.
                 */}
-                <GalleryCard title="Sand Crawler" />
-                <GalleryCard />
-                <GalleryCard />
-                <GalleryCard />
+                <Card title="Sand Crawler" />
+                <Card />
+                <Card />
+                <Card />
             </div>
         </div>
     );
