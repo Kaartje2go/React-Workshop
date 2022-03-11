@@ -5,7 +5,7 @@ import './GalleryContainer.css';
 // This container will show the gallery page, showcasing the available items to inspect
 const GalleryContainer = () => {
     const onCardClicked = () => {
-        // Here we will direct the user to the details page.
+        // Here we direct the user to the details page with 'useNavigate': https://reactrouter.com/docs/en/v6/getting-started/overview
     }
 
     return (
@@ -20,8 +20,8 @@ const GalleryContainer = () => {
                    * There are some generic props, such as 'className' and 'onClick', but you can add any prop you need.
                 */}
                 <Card title="Sand Crawler" />
-                <Card />
-                <Card />
+                <Card title="Millennium Falcon" />
+                <Card title="T-16 Skyhopper"/>
                 <Card />
             </div>
         </div>
