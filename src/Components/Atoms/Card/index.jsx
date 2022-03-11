@@ -1,12 +1,12 @@
 import React from 'react';
 import './Card.css';
 
-const GalleryCard = ({ title }) => {
+const Card = ({ title }) => {
     // If properties are passed from the parent, we can use them here
     const imageSeed = title || 'placeholder';
 
     const handleClick = () => {
-
+        // To keep the Card component generic, we will pass the click event to the parent.
     };
 
     return (
@@ -26,4 +26,4 @@ const GalleryCard = ({ title }) => {
     );
 };
 
-export default GalleryCard
+export default Card;

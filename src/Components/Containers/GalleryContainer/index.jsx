@@ -4,6 +4,10 @@ import './GalleryContainer.css';
 
 // This container will show the gallery page, showcasing the available items to inspect
 const GalleryContainer = () => {
+    const onCardClicked = () => {
+        // Here we will direct the user to the details page.
+    }
+
     return (
         <div className="container container--centered">
             <h1>In a gallery far, far away...</h1>

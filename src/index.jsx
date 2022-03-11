@@ -8,7 +8,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 
 // Other
-import queryClient from '../Queries/client';
+import queryClient from './Queries/client';
 
 // Styling
 import './index.css';
