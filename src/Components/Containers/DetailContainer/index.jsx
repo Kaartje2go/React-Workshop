@@ -15,28 +15,56 @@ const DetailContainer = () => {
                 <div className="tabs">
                     <button className="tab tab--active">Details</button>
                     <button className="tab">People</button>
+                    <button className="tab">Movies</button>
                 </div>
                 <div className="detail-content">
-                    <h2>General</h2>
-                    <div className="info-grid">
-                        <span className="text-right">Climate: </span>
-                        <span>-</span>
-                        <span className="text-right">Terrain: </span>
-                        <span>-</span>
-                        <span className="text-right">Population: </span>
-                        <span>-</span>
-                        <span className="text-right">Gravity: </span>
-                        <span>-</span>
+                    <div className="detail-content__block">
+                        <h2>General</h2>
+                        <table className="info-table">
+                            <tbody>
+                                <tr>
+                                    <td>Climate:</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>Terrain:</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>Population:</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>Gravity:</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <h2>Statistics</h2>
-                    <div className="info-grid">
-                        <span className="text-right">Diameter:</span>
-                        <span>-</span>
-                        <span className="text-right">Rotation period: </span>
-                        <span>-</span>
-                        <span className="text-right">Orbital period: </span>
-                        <span>-</span>
+                    <div className="detail-content__block">
+                        <h2>Statistics</h2>
+                        <table className="info-table">
+                            <tbody>
+                                <tr>
+                                    <td>Diameter:</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>Rotation period:</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>Orbital period:</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
+                </div>
+                <div className="detail-footer">
+                    <button className="button">
+                        Take me there!
+                    </button>
                 </div>
             </div>
         </div>
