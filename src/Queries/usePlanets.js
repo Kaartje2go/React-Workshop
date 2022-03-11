@@ -1,8 +1,8 @@
 import { useQuery } from 'react-query';
 
 
-function useVehicles() {
-    // We'll get all the vehicles from the API here, using this URL: https://swapi.dev/api/vehicles
+function usePlanet() {
+    // We'll get all the planets from the API here, using this URL: https://swapi.dev/api/planets
     
     /**
      * SWAPI does not provide resources with an 'id'.
@@ -19,8 +19,8 @@ function useVehicles() {
     // To handle the http call itself, we'll use the Fetch API that JS provides: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 
     return {
-        vehicles: [] // Here we'll return the data
+        planets: [] // Here we'll return the data
     };
 }
 
-export default useVehicles;
+export default usePlanet;

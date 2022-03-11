@@ -19,9 +19,9 @@ const GalleryContainer = () => {
                    * You can pass them properties (props), as seen below with 'title'. 
                    * There are some generic props, such as 'className' and 'onClick', but you can add any prop you need.
                 */}
-                <Card title="Sand Crawler" />
-                <Card title="Millennium Falcon" />
-                <Card title="T-16 Skyhopper"/>
+                <Card title="Tatooine" />
+                <Card title="Alderaan" />
+                <Card title="Yavin IV"/>
                 <Card />
             </div>
         </div>

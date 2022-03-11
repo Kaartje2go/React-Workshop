@@ -12,14 +12,14 @@ const Card = ({ title }) => {
     return (
         <button className="card">
             <div className="card__image">
-                <img src={ `https://picsum.photos/seed/${imageSeed}/300/200` } alt="vehicle" />
+                <img src={ `https://picsum.photos/seed/${imageSeed}/300/200` } alt={ title || 'planet' } />
             </div>
             <div className="card__content">
                 <div className="card__title">
-                    { title || '[Vehicle name]' } 
+                    { title || '[Planet name]' } 
                 </div>
                 <div className="card__subtitle">
-                    [Vehicle model]
+                    [Planet climate]
                 </div>
             </div>
         </button>
