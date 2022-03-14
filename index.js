@@ -5,10 +5,10 @@ import { QueryClientProvider } from 'react-query';
 import { BrowserRouter } from 'react-router-dom';
 
 // Components
-import App from './App';
+import App from './src/App';
 
 // Other
-import queryClient from './Queries/client';
+import queryClient from './src/Queries/client';
 
 // Styling
 import './index.css';
