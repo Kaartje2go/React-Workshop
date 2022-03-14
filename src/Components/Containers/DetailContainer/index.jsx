@@ -8,8 +8,8 @@ const DetailContainer = () => {
     const imageUrl = getRandomImageUrl({ seed: title, width: 1200, height: 400 });
 
     return (
-        <div className="container container--centered">
-            <h1>{ title }</h1>
+        <div className="container">
+            <h1 className="text-center">{ title }</h1>
             <div className='detail-container'>
                 <img className="detail-image" src={ imageUrl } alt={ title || 'planet' } />
                 <div className="tabs">
