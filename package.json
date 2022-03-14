@@ -1,7 +1,9 @@
 {
   "name": "react-workshop",
+  "description": "A short workshop to get going with React.",
   "version": "0.1.0",
   "private": true,
+  "main": "src/index.jsx",
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

@@ -42,7 +42,7 @@ const DetailContainer = () => {
 
     return (
         <div className="container">
-            <h1>{ title }</h1>
+            <h1 className="text-center">{ title }</h1>
             <div className='detail-container'>
                 <img className="detail-image" src={ imageUrl } alt={ title || 'planet' } />
                 <Tabs
