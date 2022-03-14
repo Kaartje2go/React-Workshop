@@ -1,11 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import usePlanets from '../../../Queries/usePlanets';
 import Card from '../../Atoms/Card';
 import './GalleryContainer.css';
 
 // This container will show the gallery page, showcasing the available items to inspect
 const GalleryContainer = () => {
-    const onCardClicked = () => {
+    const { planets } = usePlanets();
+    const navigate = useNavigate();
+
+    const handleCardClick = (id) => {
         // Here we direct the user to the details page with 'useNavigate': https://reactrouter.com/docs/en/v6/getting-started/overview
+        navigate(`/detail/${id}`);
     }
 
     return (
@@ -19,10 +25,14 @@ const GalleryContainer = () => {
                    * You can pass them properties (props), as seen below with 'title'. 
                    * There are some generic props, such as 'className' and 'onClick', but you can add any prop you need.
                 */}
-                <Card title="Tatooine" />
-                <Card title="Alderaan" />
-                <Card title="Yavin IV"/>
-                <Card />
+                { planets.map(planet => (
+                    <Card
+                        key={ planet.id }
+                        title={ planet.name }
+                        subtitle={ planet.climate }
+                        onClick={ () => handleCardClick(planet.id) }
+                    />
+                )) }
             </div>
         </div>
     );

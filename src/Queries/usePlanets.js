@@ -1,9 +1,7 @@
 import { useQuery } from 'react-query';
 
 
-function usePlanet() {
-    // We'll get all the planets from the API here, using this URL: https://swapi.dev/api/planets
-    
+function usePlanets() {    
     /**
      * SWAPI does not provide resources with an 'id'.
      * We can make things a bit easier for ourselves by adding it to every resource with this function.
@@ -15,12 +13,16 @@ function usePlanet() {
         return resourceUrl.match(/\d+/)[0];
     }
 
-    // To retrieve the data with React Query, we'll be using the 'useQuery' hook. You can find the basics here: https://react-query.tanstack.com/guides/queries 
-    // To handle the http call itself, we'll use the Fetch API that JS provides: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+    const { data } = useQuery('planets', () => {
+        return fetch('https://swapi.dev/api/planets').then(response => response.json());
+    });
 
     return {
-        planets: [] // Here we'll return the data
+        planets: data?.results ? data.results.map((planet) => {
+            planet.id = findIdByResourceUrl(planet.url);
+            return planet;
+        }) : []
     };
 }
 
-export default usePlanet;
+export default usePlanets;
