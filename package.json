@@ -1,5 +1,6 @@
 {
   "name": "react-workshop",
+  "description": "A short workshop to get going with React.",
   "version": "0.1.0",
   "private": true,
   "main": "src/index.jsx",
