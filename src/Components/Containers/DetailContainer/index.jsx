@@ -1,6 +1,6 @@
 // Vendors
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 // Other
 import getRandomImageUrl from '../../../Helpers/getRandomImageUrl';
@@ -12,6 +12,7 @@ import './DetailContainer.css'
 const DetailContainer = () => {
     const { planetId } = useParams();
     const { planet } = usePlanet(planetId);
+    const navigate = useNavigate();
     const [activeTabValue, setActiveTabValue] = useState();
 
     const title = planet?.name || '[Planet name]';
@@ -32,6 +33,10 @@ const DetailContainer = () => {
         }
     ];
 
+    const handlePreviousClick = () => {
+        navigate('/');
+    };
+
     const handleTabClick = (value) => {
         setActiveTabValue(value);
     };
@@ -42,7 +47,10 @@ const DetailContainer = () => {
 
     return (
         <div className="container">
-            <h1 className="text-center">{ title }</h1>
+            <div className="top-bar">
+                <button className="button" onClick={ handlePreviousClick }>{ '<' }</button>
+                <h1 className="text-center">{ title }</h1>
+            </div>
             <div className='detail-container'>
                 <img className="detail-image" src={ imageUrl } alt={ title || 'planet' } />
                 <Tabs
