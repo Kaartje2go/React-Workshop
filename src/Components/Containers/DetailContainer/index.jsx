@@ -66,19 +66,19 @@ const DetailContainer = () => {
                                 <tbody>
                                     <tr>
                                         <td>Climate:</td>
-                                        <td>-</td>
+                                        <td>{ planet?.climate }</td>
                                     </tr>
                                     <tr>
                                         <td>Terrain:</td>
-                                        <td>-</td>
+                                        <td>{ planet?.terrain }</td>
                                     </tr>
                                     <tr>
                                         <td>Population:</td>
-                                        <td>-</td>
+                                        <td>{ planet?.population }</td>
                                     </tr>
                                     <tr>
                                         <td>Gravity:</td>
-                                        <td>-</td>
+                                        <td>{ planet?.gravity }</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -89,15 +89,15 @@ const DetailContainer = () => {
                                 <tbody>
                                     <tr>
                                         <td>Diameter:</td>
-                                        <td>-</td>
+                                        <td>{ planet?.diameter }</td>
                                     </tr>
                                     <tr>
                                         <td>Rotation period:</td>
-                                        <td>-</td>
+                                        <td>{ planet?.rotation_period }</td>
                                     </tr>
                                     <tr>
                                         <td>Orbital period:</td>
-                                        <td>-</td>
+                                        <td>{ planet?.orbital_period }</td>
                                     </tr>
                                 </tbody>
                             </table>
