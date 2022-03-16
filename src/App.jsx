@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router';
+import DemoContainer from './Components/Containers/DemoContainer';
 import GalleryContainer from './Components/Containers/GalleryContainer';
 import './App.css';
 
@@ -7,6 +8,7 @@ const App = () => {
     <div className="app">
       <Routes>
         <Route path="/" element={<GalleryContainer />} />
+        <Route path="/demo" element={ <DemoContainer /> } />
         {/* Here we'll want to add a route to see the details page. Preferably, we use the 'id' of the planet in the route. */}
       </Routes>
     </div>
