@@ -23,7 +23,7 @@ const GalleryContainer = () => {
                    * You can pass them properties (props), as seen below with 'title'. 
                    * There are some generic props, such as 'className' and 'onClick', but you can add any prop you need.
                 */}
-                <button className="card">
+                <button className="card card--active">
                     <div className="card__image">
                         <img src={ getRandomImageUrl({ seed: 'Tatooine', width: 1200, height: 400 }) } alt="Tatooine" />
                     </div>
