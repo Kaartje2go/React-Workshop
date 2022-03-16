@@ -1,3 +1,24 @@
+# Steps
+1. Create a 'Card' Component to replace the repetitive data from `GalleryContainer/index.jsx` (and give it a `onClick` event)
+2. Fetch our planets from API in the `usePlanets.js` query
+3. Ensure that every planet has an id property in `usePlanets.js`
+4. Use iteration to render the Card component based on API data in `GalleryContainer/index.jsx`
+5. Add a route for Details page in `App.jsx`, for example `/details/:planetId`
+6. Navigate to Details page when the user clicks a card in `GalleryContainer/index.jsx`
+7. Fetch the chosen planet on the Details page using `usePlanet.js`
+8. Fill the Details page with the fetched data in `DetailContainer.js`
+
+## Bonus
+9. Make the tabs on the Details page work
+10. Add a ‘previous’ button
+11. Show a Loading indicator when fetching the data
+12. Turn tabs into separate component
+13. Turn info-table into separate component
+14. Turn button into separate component
+15. Create content for the ‘people’ tab
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
