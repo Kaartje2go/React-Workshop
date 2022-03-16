@@ -1,9 +1,12 @@
 import React from 'react';
 import getRandomImageUrl from '../../../Helpers/getRandomImageUrl';
+import usePlanet from '../../../Queries/usePlanet';
 import './DetailContainer.css'
 
 // This container will hold the contents of the details page, displaying information of the item selected on the gallery page. 
 const DetailContainer = () => {
+    usePlanet();
+
     const title = '[Planet name]';
     const imageUrl = getRandomImageUrl({ seed: title, width: 1200, height: 400 });
 
