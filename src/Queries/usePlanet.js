@@ -1,4 +1,4 @@
-
+import { useQuery } from 'react-query';
 
 function usePlanet() {
     /**

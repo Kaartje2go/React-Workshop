@@ -5,7 +5,8 @@ import './DetailContainer.css'
 
 // This container will hold the contents of the details page, displaying information of the item selected on the gallery page. 
 const DetailContainer = () => {
-    usePlanet();
+    const data = usePlanet();
+    const planet = data?.planet; 
 
     const title = '[Planet name]';
     const imageUrl = getRandomImageUrl({ seed: title, width: 1200, height: 400 });
