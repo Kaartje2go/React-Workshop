@@ -15,6 +15,8 @@ const GalleryContainer = () => {
         navigate(`/detail/${id}`);
     }
 
+    console.log(planets)
+
     return (
         <div className="container container--centered">
             <h1>In a gallery far, far away...</h1>
