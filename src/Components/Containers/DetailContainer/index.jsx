@@ -1,3 +1,4 @@
+import React from 'react';
 import getRandomImageUrl from '../../../Helpers/getRandomImageUrl';
 import usePlanet from '../../../Queries/usePlanet';
 import './DetailContainer.css'
