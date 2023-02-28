@@ -1,6 +1,6 @@
 // Vendors
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 import { QueryClientProvider } from 'react-query';
 import { BrowserRouter } from 'react-router-dom';
 
@@ -14,15 +14,14 @@ import queryClient from './Queries/client';
 import './index.css';
 
 const container = document.getElementById('root');
-const root = ReactDOM.createRoot(container);
+const root = createRoot(container);
 
 root.render(
-  <React.StrictMode>
+  <StrictMode>
     <QueryClientProvider client={ queryClient }>
       <BrowserRouter>
         <App />
       </BrowserRouter>
     </QueryClientProvider>
-  </React.StrictMode>,
-  
+  </StrictMode>
 );

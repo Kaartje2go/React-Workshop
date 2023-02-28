@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import usePlanets from '../../../Queries/usePlanets';
 import Card from '../../Atoms/Card';
