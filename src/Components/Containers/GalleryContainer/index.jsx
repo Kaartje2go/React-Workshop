@@ -1,4 +1,3 @@
-import React from 'react';
 import getRandomImageUrl from '../../../Helpers/getRandomImageUrl';
 import usePlanets from '../../../Queries/usePlanets';
 import Card from '../../Atoms/Card';
