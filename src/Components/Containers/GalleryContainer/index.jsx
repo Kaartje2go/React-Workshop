@@ -9,6 +9,8 @@ const GalleryContainer = () => {
     const { planets } = usePlanets();
     const navigate = useNavigate();
 
+    usePlanets();
+    
     const handleCardClick = (id) => {
         // Here we direct the user to the details page with 'useNavigate': https://reactrouter.com/docs/en/v6/getting-started/overview
         navigate(`/detail/${id}`);

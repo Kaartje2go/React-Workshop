@@ -13,7 +13,10 @@ import queryClient from './Queries/client';
 // Styling
 import './index.css';
 
-ReactDOM.render(
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+
+root.render(
   <React.StrictMode>
     <QueryClientProvider client={ queryClient }>
       <BrowserRouter>
@@ -21,5 +24,5 @@ ReactDOM.render(
       </BrowserRouter>
     </QueryClientProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  
 );
