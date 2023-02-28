@@ -15,13 +15,6 @@ const GalleryContainer = () => {
         <div className="container container--centered">
             <h1>In a gallery far, far away...</h1>
             <div className="gallery-grid">
-                {/**
-                   * Using Components
-                   * ---------------- 
-                   * Components can be imported and used in your jsx.
-                   * You can pass them properties (props), as seen below with 'title'. 
-                   * There are some generic props, such as 'className' and 'onClick', but you can add any prop you need.
-                */}
                 <button className="card card--active">
                     <div className="card__image">
                         <img src={ getRandomImageUrl({ seed: 'Tatooine', width: 1200, height: 400 }) } alt="Tatooine" />
