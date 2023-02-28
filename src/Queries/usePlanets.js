@@ -20,6 +20,7 @@ function usePlanets() {
 
     return {
         planets: data?.results ? data.results.map((planet) => {
+            planet.id = findIdByResourceUrl(planet.url)
             return planet;
         }) : []
     };
